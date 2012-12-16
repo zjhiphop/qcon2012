@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>QCon HangZhou --- Android</title>
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <meta name="description" content="Android performance optimize share" />
+    <meta name="author" content="zjhiphop" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+	<div class="fallback-message">
+	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+	<div id="impress">
+		<!--
+        
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    	-->
+    	<div id="introduce" class="step" data-x="-1000" data-y="-1500" data-scale="0.5">
+  			<b>Introduce</b><br/>
+  			<p>
+  				<ul>
+  					<li>Jade.Z & Kai.Feng</li>
+  					<li>Blog: <a href="http://zjhiphop.github.com">zjhiphop</a> </li>
+  					<li>WeiBo: @zjhiphop</li>
+
+  				</ul>
+  			</p>
+    	</div>
+
+      <div id="bored" class="step slide" data-x='0' data-y="-1500" data-scale="0.4">
+        <b>Agenda</b>
+        <q>
+        <ul>
+          <li>TaoBao Practice in Android Platform</li>
+          <li>Thinking of build a high performance mobile app</li>
+          <li>Things you need to take care</li>
+        </ul>
+        </q>
+      </div>  
+
+      <!--Taobao practice-->
+    	<div class="step slide" data-x="1000" data-y="-1500" data-scale="0.3">
+        
+    		  <b>High Performance Developement in Taobao</b>
+      	<q>
+        	<ul>
+      			<li>淘宝客户端 Android</li>
+      			<li>移动互联网客户端的用户体验</li>
+      			<li>高性能应⽤的标准</li>
+      		</ul>
+        </q>
+    	</div>
+
+    	<div class="step slide" data-x="2000" data-y="-1500">
+    		<q><b>淘宝客户端</b>
+    		<img src="http://img01.taobaocdn.com/tps/i1/T1UP_hXjRgXXbfnjzh-990-287.png" alt="" width="600">
+    		<img src="http://img04.taobaocdn.com/tps/i4/T1FsrtXoRdXXbbfZvj-669-279.jpg" alt="" width="600">
+        </q>
+    	</div>
+
+     	<div class="step slide" data-x="3000" data-y="-1500">
+        
+           <b>What they have done</b>
+        <q>
+           <ul>
+             <li>每⽇日400W UV</li>
+             <li>ONE released per month</li>
+             <li>千分之三 的线上Crash发⽣生率</li>
+             <li>支持 WEBP, 30% off in image size</li>
+             <li>Improve in poor network</li>
+             <li>Improving Page Switching Animation</li>
+           </ul>
+           </q>
+     	</div>
+
+      <div class="step slide" data-x="4000" data-y="-1500">
+        <b>应用框架</b>
+        <q><img src="服务框架架构.png" alt="" width="800"></q>
+      </div>
+
+      <div class="step slide" data-x="5000" data-y="-1500">
+        
+          <h3>淘宝如何⾯面对挑战</h3>
+        <q>
+          <ul>
+            <li>内存</li>
+            <li>来⾃网络</li>
+            <li>动画性能测试</li>
+            <li>界⾯面切换动画速度优化</li>
+          </ul>
+        </q>
+      </div>
+
+      <div class="step slide" data-x="6000" data-y="-1500">
+        
+          <b>TaoBao Practice OverView</b>
+        <q>
+          <ul>
+            <li>UIUE</li>
+            <li>
+              保持可持续地开发效率是第⼀重要的事情<br/>
+              DRY, Focus On One Point
+            </li>
+            <li>效率和兼容性 ⼤大于 速度</li>
+            <li>性能的四⼤大⾦金刚:稳定性,流量,速度,电量</li>
+          </ul>
+        </q>
+      </div>
+
+      <div class="step slide" data-x="7000" data-y="-1500">
+        <b>Taobao Best Practice</b>
+        <q>
+            •  webp support </br>
+            •  Connection optimization in Mobile Network(Money and Power Save)  </br>
+            •  Different image strategy in WIFI 2G/3G  </br>
+            •  Incremental decode while downloading  </br>
+        </q>  
+      </div> 
+      <div class="step slide" data-x="8000" data-y="-1500">
+          <b>Taobao Best Practice</b>
+          <q>
+          •  uncompleted Image Cache   </br>
+          •  Cache-Control for statistic resource   </br>
+          •  Thread Pool  </br>
+          </q>
+      </div> 
+      <!--Thinking how to build a mobile app-->
+      <div class="step" data-x="-2000" data-y="1500" data-rotate="0">
+        <q>Thinking how to build a mobile app</q>
+      </div>
+      <div class="step" data-x="-1000" data-y="1500" data-rotate="-45">
+        <b>移动互联网的用户体验</b>
+        <p>
+        App运⾏行在客户的设备上</br>
+        App是属于⽤用户的,Web不是</br>
+        </p>
+      </div>
+
+      <div class="step" data-x="0" data-y="1500" data-rotate="-90">
+        <b>运行在客户的机器上</b>
+        <p>
+          • ⽤用户使⽤用时的感受</br>
+            –  你对家⾥里的冰箱和办公室⾥里的冰箱的需求,是不同的 </br>
+            –  App是属于⽤用户的私⼈人⽤用品</br>
+
+          • 千差万别的设备能⼒力=不同的瓶颈</br>
+            –  CPU,RAM,屏幕⼤大⼩小,操作性,电量</br>
+
+          • 运行环境的复杂</br>
+            –  ⽤用户的⺴⽹网络环境,电量,流量,内存</br>
+        </p>
+      </div>
+
+      <div class="step" data-x="1000" data-y="1500" data-rotate="-135">
+        <b>用户体验的理解</b>
+        <p>
+          <ul>
+            <li><h3>优先满⾜足⽤用户的基本期望</h3><br/><h4>先吃饱,后吃好,“上菜”速度⼀一定要快</h4></li>
+            <li>
+              <h3>客户使⽤用时的具体感受——换位思考</h3>
+              <br/>
+              <h4>简单,⽅方便,稳定,快速</h4>
+            </li>
+            <li>
+              <h3>先满足哪一部分用户的期望？</h3>
+              <br>
+              <h4>对功能补充和优化 vs 新功能开发时,请相信你的PD</h4>
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="step" data-x="2000" data-y="1500" data-rotate="-180">
+        <b>How much 用户体验 they care? (taobao care only 30%)</b>
+        <p>
+        <ul>
+          <li>体验助产品领先对手，但不能将产品变成用户需要的</li>
+          <li>细节重要， 但不期望所有用户感受到</li>
+          <li>团队的品味决定产品的品质（多用用Mac）</li>
+        </ul>
+        </p>
+      </div>
+
+      <!--Things need to take care-->
+      <div class="step" data-x="-2000" data-y="0" data-scale="0.1">
+        <q><b>Things need to take care</b></q>
+      </div>
+      <div class="step" data-x="-1000" data-y="0" data-scale="0.1">
+        <q>
+        <ul>
+          <li>Memory</li>
+          <li>Network</li>
+          <li>Animation</li>
+        </ul>
+        </q>
+      </div>
+      <div class="step" data-x="0" data-y="0" data-scale="0.2">
+          <b>Memory Case</b><ul>
+            <li>监听总体</li>
+            <li>控制大户</li>
+            <li>快速定位</li>
+            <li>变成规范</li>
+          </ul>
+      </div>
+
+      <div class="step"  data-x="1000" data-y="0" data-scale="0.3">
+        <b>solutions</b>
+        <p>
+        •  NativeBitmapChecking </br>
+            –  Image Pool</br>
+            –  Bitmap Proxy</br>
+        •  ActivityChecking </br>
+            –  StrictMode</br>
+            –  TaoBao Activity Monitor</br>
+        •  Don’ttransferBigObjectbyMsg</br>
+        </p>
+      </div>  
+      <div class="step" data-x="1500" data-y="0" data-scale="0.2">
+        <b>solutions</b>
+        <p>
+        •  SetRAMLimitationforpoordevice</br>
+        •  Datasharedbetweenthread </br>
+        •  Setobjectnullimmediately</br>
+        •  Skip Memory Allocation while list view Scrolling is not enough.
+        </p>
+      </div>
+       <div class="step"  data-x="2000" data-y="0" data-scale="0.3">
+        <b>NetWork</b>
+        <ul>
+          <li>Limited bandwidth</li>
+          <li>High latency</li>
+          <li>Unstable</li>
+        </ul>
+      </div>
+      <div class="step"  data-x="3000" data-y="0" data-scale="0.4">
+        <b>solution</b>
+        <ul>
+          <li>Bundled*Transfer -- merge requests</li>
+          <li>Concurrent Download</li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="step"  data-x="4000" data-y="0" data-scale="0.5">
+        <b>Others</b>
+        <p>
+          •  Inefficient Connections</br>
+          •  Offloading to WIFI When Possible</br>
+          •  Unnecessary refresh, Duplicate Content</br>
+          •  Periodic Transfers</br>
+          •  No Multiple Simultaneous TCP Connections</br>
+          •  Use Cache-Control</br>
+          •  Pre-fetching(by Business)
+        </p>  
+      </div>
+      <div class="step"  data-x="5000" data-y="0" data-scale="0.6">
+        <b>Animation case</b>
+        <p>
+          1. 动画快不等于体验好，关键帧不能丢失</br>
+          2. Customize View Control</br>
+          3. UIUE is Important</br>
+        </p>
+      </div>
+
+      <!--Tools share-->
+      <div class="step" data-x="3000" data-y="3000" data-rotate="90">
+        <b>Performance Tools</b>
+        <ul>
+          <li>
+            <h3>Android</h3>
+            <p>
+              •  Find and locate Problem</br>
+              •  Frame Rate(FPS) for animation</br>
+              •  Memory Usage</br>
+              •  Layout Checking use Lint</br>
+              •  Network Performance, use ARO and DDMS</br>
+              •  trace view</br>
+              •  Power Monitor</br>
+            </p>
+          </li>
+        </ul> 
+      </div>
+      <div class="step" data-x="4000" data-y="3000" data-rotate="90">
+        <b>Performance Tools</b>
+        <p> <h3 data-scale="2"><span>IOS</span><br><a href="http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html">Performance Tuning</a>  </h3></p>
+      </div>
+      <div class="step" data-x="4000" data-y="4000" data-rotate="135" data-scale="3">
+        <b>Remember</b>
+        <ul>
+          <li>Don’t do work that you don’t need to do. </li>
+          <li>Don’t allocate memory if you can avoid it.</li>
+        </ul>
+      </div>
+      <div class="step" data-scale="0.1" data-x="4500" data-y="4500">
+        <b>QA</b>
+        <p>
+          Thank you!!!
+        </p>
+      </div>
+      <p style="-webkit-transform: translate3d(-100px, 3000px, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(50);">@zjhiphop</p>
+      <div id="overview" class="step" data-x="5000" data-y="3000" data-scale="10">
+      </div>
+  </div>
+	<script src="js/impress.js"></script>
+	<script>impress().init();</script>
+</body>
+</html>
